@@ -1,4 +1,3 @@
-
 # Code Zero To Hero Curriculum
 
 ## Python
@@ -23,7 +22,7 @@
     - `x, y, z = 'Orange', 'Banana', 'Cherry'`
   - You can assign the same value to multiple variables in one line
     - `x = y = z = 'Orange`
-    - If you have a collection of values in a list, tuple etc. Python allows you to extract the values into variables. This is called *unpacking*
+    - If you have a collection of values in a list, tuple etc. Python allows you to extract the values into variables. This is called _unpacking_
       ```
       fruits = ['apple', 'banana', 'cherry']
       x, y, z = fruits
@@ -48,7 +47,7 @@
   - Boolean type: `bool`
   - Binary types: `bytes`, `bytearray`
   - None type: `NoneType`
-- You can *cast* to change data types
+- You can _cast_ to change data types
   ```
   x = 100
   print(x)        # Output: 100
@@ -62,15 +61,18 @@
 - Since strings are arrays, we can loop through the characters in a string, with a `for` loop
 - To get the length of a string, use the `len()` function
 - To check if a certain phrase or character is present in a string, we can use the keyword `in`
-   ```
-   txt = 'The best things in life are free!'
-   print('free' in txt)
 
-   # If statement
-   if 'free' in txt:
-       print('Yes, 'free' is present.')
-   ```
+  ```
+  txt = 'The best things in life are free!'
+  print('free' in txt)
+
+  # If statement
+  if 'free' in txt:
+      print('Yes, 'free' is present.')
+  ```
+
 - To check if a certain phrase or character is NOT present in a string, we can use the keyword `not in`
+
   ```
   txt = 'The best things in life are free!'
   print('expensive' not in txt)
@@ -79,6 +81,7 @@
   if 'expensive' not in txt:
       print('No, 'expensive' is NOT present.')
   ```
+
 - Slicing
   - Specify the start index and the end index, separated by a colon, to return a part of the string
     ```
@@ -110,13 +113,14 @@
     print(c)
     ```
 - Interpolation
+
   ```
   greeting = 'Hi'
   name = 'Justin'
 
   # Format method
   txt = '{}, {}'.format(greeting, name)
-  
+
   # f-string
   txt = f'{greeting}, {name}'
   ```
@@ -155,6 +159,7 @@
   print(this_list)
   ```
 - Access items
+
   ```
   a_list = ['apple', 'banana', 'cherry', 'orange', 'kiwi', 'melon', 'mango']
 
@@ -173,6 +178,7 @@
   # By leaving out the end value, the range will go on to the end of the list
   print(a_list[2:]) # Output ['cherry', 'orange', 'kiwi', 'melon', 'mango']
   ```
+
 - Check if item exists
   ```
   a_list = ['apple', 'banana', 'cherry']
@@ -182,28 +188,31 @@
 - Change list items
   - To change the value of a specific item, refer to the index number
     ```
-    a_list = ["apple", "banana", "cherry"]
-    a_list[1] = "raspberry"
+    a_list = ['apple', 'banana', 'cherry']
+    a_list[1] = 'raspberry'
     print(a_list)
     ```
 - Add list items
+
   ```
-  a_list = ["apple", "banana", "cherry"]
+  a_list = ['apple', 'banana', 'cherry']
 
   # To add an item to the end of the list, use the `append()` method
-  a_list.append("orange")
+  a_list.append('orange')
   print(a_list)
-  
+
   # To insert a list item at a specified index, use the `insert()` method
-  a_list.insert(1, "orange")
+  a_list.insert(1, 'orange')
   print(a_list)
   ```
+
 - Remove list items
+
   ```
-  a_list = ["apple", "banana", "cherry"]
+  a_list = ['apple', 'banana', 'cherry']
 
   # The `remove()` method removes the specified item
-  a_list.remove("banana")
+  a_list.remove('banana')
   print(a_list)
 
   # The `pop()` method removes the specified index
@@ -225,8 +234,40 @@
   a_list.clear()
   print(a_list)
   ```
+
 - Loop lists
+
+  - You can loop through the list items by using a `for` loop
+
+  ```
+  this_list = ['apple', 'banana', 'cherry']
+  for x in this_list:
+    print(x)
+
+  # While loop
+  i = 0
+  while i < len(this_list):
+    print(this_list[i])
+    i = i + 1
+  ```
+
 - List comprehension
+
+  - Loop through list with one line of code
+
+  ```
+  fruits = ['apple', 'banana', 'cherry', 'kiwi', 'mango']
+
+  new_list = [x for x in fruits if 'a' in x]
+
+  print(new_list)
+  ```
+
 - Sort
+  - Lists have a `sort()` method that will sort the list alphanumerically, ascending, by default
+  ```
+  this_list = ['orange', 'mango', 'kiwi', 'pineapple', 'banana']
+  this_list.sort()
+  print(this_list)
+  ```
 - Join
-     
