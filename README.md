@@ -264,10 +264,66 @@
   ```
 
 - Sort
+
   - Lists have a `sort()` method that will sort the list alphanumerically, ascending, by default
+
   ```
   this_list = ['orange', 'mango', 'kiwi', 'pineapple', 'banana']
   this_list.sort()
   print(this_list)
   ```
+
 - Join
+
+  - Join/concatenate two or more lists with `+` operator
+
+    ```
+    list1 = ['a', 'b', 'c']
+    list2 = [1, 2, 3]
+
+    list3 = list1 + list2
+    ```
+
+  - with `extend()` method
+    ```
+    list1.extend(list2)
+    ```
+
+### Tuples
+
+- A tuple is a collection which is ordered and **unchangeable**
+
+### Sets
+
+- Set items are unique and you can remove items and add new items
+- Add/Remove items
+
+  ```
+  this_set = {'apple', 'banana', 'cherry'}
+
+  # Add
+  this_set.add('orange')
+
+  # Remove
+  this_set.remove('banana')
+  ```
+
+- Add/Join sets
+
+  ```
+  this_set = {'apple', 'banana', 'cherry'}
+  tropical = {'pineapple', 'mango', 'papaya'}
+
+  # Add elements from tropical into this_set
+  this_set.update(tropical)
+
+  # union() method
+  set1 = {'a', 'b' , 'c'}
+  set2 = {1, 2, 3}
+
+  set3 = set1.union(set2)
+  ```
+
+### Dictionaries
+
+- Dictionaries are used to store data values in key:value pairs
